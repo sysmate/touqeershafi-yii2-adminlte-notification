@@ -1,0 +1,21 @@
+{
+    "name": "touqeer/yii2-adminlte2-notification",
+    "description": "Provide easy to use notification system for yii2 admin lte.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","adminlte"," notification"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Touqeer Shafi",
+            "email": "touqeer.shafi@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "touqeer\\notification\\": ""
+        }
+    }
+}
