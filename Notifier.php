@@ -87,7 +87,7 @@ class Notifier extends \yii\db\ActiveRecord
 
         $user_id = (!$user_id) ? Yii::$app->user->getId() : $user_id;
 
-        return self::find()->where(['user_id' => $user_id, 'is_viewed' => self::NOT_VIEWED])->asArray()->all();
+        return self::find()->where(['user_id' => $user_id])->orderBy(['created' => SORT_DESC,'is_viewed' => SORT_ASC])->asArray()->all();
     }
 
 }

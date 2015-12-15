@@ -22,7 +22,7 @@
                 <ul class="menu">
                     <?php if ($count > 0) : ?>
                         <?php foreach($notifications as $notification) : ?>
-                            <li>
+                            <li class="<?=(!$notification['is_viewed']) ? 'bg-success' : ''?>">
                                 <a href="<?= ($notification['url']) ? $notification['url'] : 'javascript:void(0)' ?>">
                                     <i class="fa <?=$notification['icon'] ?>"></i>
                                     <?=$notification['text']?>
@@ -32,7 +32,6 @@
                     <?php endif; ?>
                 </ul>
             </li>
-            <li class="footer"><a href="#">View all</a></li>
         </ul>
     </li>
 <?php
